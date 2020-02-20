@@ -24,7 +24,8 @@ export function DestacUpdaye(g)
 
 export function MargeGraph(g) 
 {
-    for (let index = 0; index < g.vertices.length; index++) {
+    for (let index = 0; index < g.vertices.length; index++) 
+    {
         const element = g.vertices[index];
         let u = graph.vertices.find(x => x.value == element.value);
         if (u != undefined)
@@ -86,7 +87,8 @@ Edges: ${JSON.stringify(graph.edges)}`;
     }
 }
 
-function onClickVertex() {
+function onClickVertex() 
+{
     let g = {vertices: [], edges: []}
     graph.vertices.forEach(element => 
     {
@@ -112,7 +114,8 @@ function PointInLine(l1, l2, t)
     return [x, y];
 }
 
-export function main(_p5) {
+export function main(_p5) 
+{
     p5 = _p5;
 
     // NOTE: Set up is here
